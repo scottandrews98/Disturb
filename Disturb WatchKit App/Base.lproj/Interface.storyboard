@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Disturb_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Total Coins: 0" id="dDe-7O-O2T">
+                            <accessibilityTraits key="accessibilityTraits" button="YES" notEnabled="YES"/>
+                            <color key="backgroundColor" red="0.16470588235294117" green="0.41176470588235292" blue="0.88627450980392153" alpha="1" colorSpace="deviceRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="High Score: 0" id="hjm-6g-AtX">
+                            <accessibilityTraits key="accessibilityTraits" button="YES" notEnabled="YES"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.38823529410000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <map height="100" alignment="left" id="piK-x9-vxB"/>
+                        <label width="1" height="68" alignment="left" text="Please Open The Disturb Mobile App Home Page" textAlignment="center" numberOfLines="3" minimumScaleFactor="0.80000000000000004" id="DLZ-qZ-dWq">
+                            <accessibilityTraits key="accessibilityTraits" staticText="YES" notEnabled="YES"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="highScore" destination="hjm-6g-AtX" id="qR7-nd-yyQ"/>
+                        <outlet property="mapView" destination="piK-x9-vxB" id="lSI-EB-Khy"/>
+                        <outlet property="openDisturb" destination="DLZ-qZ-dWq" id="0e9-Jm-X12"/>
+                        <outlet property="totalCoins" destination="dDe-7O-O2T" id="Q2d-2Z-bwt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="365.28205128205133"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Disturb_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

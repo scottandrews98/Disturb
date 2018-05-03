@@ -1,0 +1,1228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4926448E1FE1EC9F00606BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4926448D1FE1EC9F00606BD3 /* Assets.xcassets */; };
+		492A54891FE1D67B00078236 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A54881FE1D67B00078236 /* MapKit.framework */; };
+		494432DA1FE17E3F00B8641E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494432D91FE17E3F00B8641E /* Home.swift */; };
+		49548CC11FE2954500BFC552 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49548CC01FE2954500BFC552 /* SignIn.swift */; };
+		49574BEE1FF38BC9003CA126 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49574BED1FF38BC9003CA126 /* GoogleService-Info.plist */; };
+		499C2E111FDDCE2B0009F1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E101FDDCE2B0009F1D9 /* AppDelegate.swift */; };
+		499C2E131FDDCE2B0009F1D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E121FDDCE2B0009F1D9 /* ViewController.swift */; };
+		499C2E161FDDCE2B0009F1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C2E141FDDCE2B0009F1D9 /* Main.storyboard */; };
+		499C2E1B1FDDCE2B0009F1D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C2E191FDDCE2B0009F1D9 /* LaunchScreen.storyboard */; };
+		499C2E261FDDCE2B0009F1D9 /* DisturbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E251FDDCE2B0009F1D9 /* DisturbTests.swift */; };
+		499C2E311FDDCE2B0009F1D9 /* DisturbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E301FDDCE2B0009F1D9 /* DisturbUITests.swift */; };
+		499C2E361FDDCE2B0009F1D9 /* Disturb WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 499C2E351FDDCE2B0009F1D9 /* Disturb WatchKit App.app */; };
+		499C2E3C1FDDCE2B0009F1D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C2E3A1FDDCE2B0009F1D9 /* Interface.storyboard */; };
+		499C2E3E1FDDCE2B0009F1D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499C2E3D1FDDCE2B0009F1D9 /* Assets.xcassets */; };
+		499C2E451FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 499C2E441FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		499C2E4A1FDDCE2B0009F1D9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E491FDDCE2B0009F1D9 /* InterfaceController.swift */; };
+		499C2E4C1FDDCE2B0009F1D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E4B1FDDCE2B0009F1D9 /* ExtensionDelegate.swift */; };
+		499C2E4E1FDDCE2B0009F1D9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2E4D1FDDCE2B0009F1D9 /* NotificationController.swift */; };
+		499C2E501FDDCE2B0009F1D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499C2E4F1FDDCE2B0009F1D9 /* Assets.xcassets */; };
+		49B42C2E1FEE63C500F4BF0E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B42C2D1FEE63C500F4BF0E /* Shop.swift */; };
+		49BFC5A71FE6B9DC004C5C82 /* SignedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFC5A61FE6B9DC004C5C82 /* SignedIn.swift */; };
+		49E8E2671FF7A2A3004E8DFA /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E8E2661FF7A2A3004E8DFA /* Statistics.swift */; };
+		4F71AC6CF9865AC0FD55FB16 /* Pods_DisturbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48009FE7A6D820C9B0F2F6EF /* Pods_DisturbUITests.framework */; };
+		5C3536373A324CA498744B70 /* Pods_Disturb_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B9796D963D9EA5BFD2862E /* Pods_Disturb_WatchKit_Extension.framework */; };
+		8E0F2613D2F29712849768FD /* Pods_DisturbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53168D575823095A885E25E /* Pods_DisturbTests.framework */; };
+		9803CFEC87191B3CB8F9AE6A /* Pods_Disturb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071B6793EF48E35B4C2165C8 /* Pods_Disturb.framework */; };
+		F671308D8E5088C55F099FE7 /* Pods_Disturb_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EDB7C7B85B7333BAE30B23 /* Pods_Disturb_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		499C2E221FDDCE2B0009F1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499C2E051FDDCE2B0009F1D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499C2E0C1FDDCE2B0009F1D9;
+			remoteInfo = Disturb;
+		};
+		499C2E2D1FDDCE2B0009F1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499C2E051FDDCE2B0009F1D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499C2E0C1FDDCE2B0009F1D9;
+			remoteInfo = Disturb;
+		};
+		499C2E371FDDCE2B0009F1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499C2E051FDDCE2B0009F1D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499C2E341FDDCE2B0009F1D9;
+			remoteInfo = "Disturb WatchKit App";
+		};
+		499C2E461FDDCE2B0009F1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499C2E051FDDCE2B0009F1D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499C2E431FDDCE2B0009F1D9;
+			remoteInfo = "Disturb WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		499C2E581FDDCE2B0009F1D9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				499C2E451FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E5C1FDDCE2B0009F1D9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				499C2E361FDDCE2B0009F1D9 /* Disturb WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071B6793EF48E35B4C2165C8 /* Pods_Disturb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disturb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		268299668A7E4150F6E31BAF /* Pods-Disturb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb/Pods-Disturb.release.xcconfig"; sourceTree = "<group>"; };
+		2AD0075B6D9CA07BF6328CCE /* Pods-DisturbTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisturbTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisturbTests/Pods-DisturbTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D20CE0E8D58B65CCB8E34E0 /* Pods-DisturbUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisturbUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisturbUITests/Pods-DisturbUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45C7DF62EBFAC219A4B41E6A /* Pods-Disturb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb/Pods-Disturb.debug.xcconfig"; sourceTree = "<group>"; };
+		48009FE7A6D820C9B0F2F6EF /* Pods_DisturbUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisturbUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4926448D1FE1EC9F00606BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492A54881FE1D67B00078236 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		494432D91FE17E3F00B8641E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		49548CC01FE2954500BFC552 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		49574BED1FF38BC9003CA126 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		499C2E0D1FDDCE2B0009F1D9 /* Disturb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disturb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C2E101FDDCE2B0009F1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		499C2E121FDDCE2B0009F1D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		499C2E151FDDCE2B0009F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		499C2E1A1FDDCE2B0009F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		499C2E1C1FDDCE2B0009F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499C2E211FDDCE2B0009F1D9 /* DisturbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisturbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C2E251FDDCE2B0009F1D9 /* DisturbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisturbTests.swift; sourceTree = "<group>"; };
+		499C2E271FDDCE2B0009F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499C2E2C1FDDCE2B0009F1D9 /* DisturbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisturbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C2E301FDDCE2B0009F1D9 /* DisturbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisturbUITests.swift; sourceTree = "<group>"; };
+		499C2E321FDDCE2B0009F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499C2E351FDDCE2B0009F1D9 /* Disturb WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disturb WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C2E3B1FDDCE2B0009F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		499C2E3D1FDDCE2B0009F1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499C2E3F1FDDCE2B0009F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499C2E441FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Disturb WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C2E491FDDCE2B0009F1D9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		499C2E4B1FDDCE2B0009F1D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		499C2E4D1FDDCE2B0009F1D9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		499C2E4F1FDDCE2B0009F1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499C2E511FDDCE2B0009F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499C2E521FDDCE2B0009F1D9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		49B42C2D1FEE63C500F4BF0E /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		49BFC5A61FE6B9DC004C5C82 /* SignedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedIn.swift; sourceTree = "<group>"; };
+		49E8E2661FF7A2A3004E8DFA /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		4EFC1F3CD577A22E6D2FEBEC /* Pods-Disturb WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb WatchKit Extension/Pods-Disturb WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		59EDB7C7B85B7333BAE30B23 /* Pods_Disturb_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disturb_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F599B0624EFF73134DF65 /* Pods-Disturb WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb WatchKit Extension/Pods-Disturb WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7E99853CA64C9A9A856D72E4 /* Pods-Disturb WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb WatchKit App/Pods-Disturb WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		87F76EA6D7B914544E6C9383 /* Pods-Disturb WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disturb WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Disturb WatchKit App/Pods-Disturb WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		9C179F39D43FA1F6EC5592E4 /* Pods-DisturbTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisturbTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisturbTests/Pods-DisturbTests.release.xcconfig"; sourceTree = "<group>"; };
+		B085740A189DBD76DEE1CC8F /* Pods-DisturbUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisturbUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisturbUITests/Pods-DisturbUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8B9796D963D9EA5BFD2862E /* Pods_Disturb_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disturb_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53168D575823095A885E25E /* Pods_DisturbTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisturbTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499C2E0A1FDDCE2B0009F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492A54891FE1D67B00078236 /* MapKit.framework in Frameworks */,
+				9803CFEC87191B3CB8F9AE6A /* Pods_Disturb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E1E1FDDCE2B0009F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0F2613D2F29712849768FD /* Pods_DisturbTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E291FDDCE2B0009F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F71AC6CF9865AC0FD55FB16 /* Pods_DisturbUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E411FDDCE2B0009F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3536373A324CA498744B70 /* Pods_Disturb_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C389B09192A355DC6A4DEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F671308D8E5088C55F099FE7 /* Pods_Disturb_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492A54871FE1D67B00078236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492A54881FE1D67B00078236 /* MapKit.framework */,
+				071B6793EF48E35B4C2165C8 /* Pods_Disturb.framework */,
+				59EDB7C7B85B7333BAE30B23 /* Pods_Disturb_WatchKit_App.framework */,
+				C8B9796D963D9EA5BFD2862E /* Pods_Disturb_WatchKit_Extension.framework */,
+				D53168D575823095A885E25E /* Pods_DisturbTests.framework */,
+				48009FE7A6D820C9B0F2F6EF /* Pods_DisturbUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		499C2E041FDDCE2B0009F1D9 = {
+			isa = PBXGroup;
+			children = (
+				499C2E0F1FDDCE2B0009F1D9 /* Disturb */,
+				499C2E241FDDCE2B0009F1D9 /* DisturbTests */,
+				499C2E2F1FDDCE2B0009F1D9 /* DisturbUITests */,
+				499C2E391FDDCE2B0009F1D9 /* Disturb WatchKit App */,
+				499C2E481FDDCE2B0009F1D9 /* Disturb WatchKit Extension */,
+				499C2E0E1FDDCE2B0009F1D9 /* Products */,
+				492A54871FE1D67B00078236 /* Frameworks */,
+				CE717E47E99EF9FF2E3C2FBB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		499C2E0E1FDDCE2B0009F1D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499C2E0D1FDDCE2B0009F1D9 /* Disturb.app */,
+				499C2E211FDDCE2B0009F1D9 /* DisturbTests.xctest */,
+				499C2E2C1FDDCE2B0009F1D9 /* DisturbUITests.xctest */,
+				499C2E351FDDCE2B0009F1D9 /* Disturb WatchKit App.app */,
+				499C2E441FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499C2E0F1FDDCE2B0009F1D9 /* Disturb */ = {
+			isa = PBXGroup;
+			children = (
+				4926448D1FE1EC9F00606BD3 /* Assets.xcassets */,
+				499C2E101FDDCE2B0009F1D9 /* AppDelegate.swift */,
+				499C2E121FDDCE2B0009F1D9 /* ViewController.swift */,
+				49B42C2D1FEE63C500F4BF0E /* Shop.swift */,
+				494432D91FE17E3F00B8641E /* Home.swift */,
+				49548CC01FE2954500BFC552 /* SignIn.swift */,
+				49BFC5A61FE6B9DC004C5C82 /* SignedIn.swift */,
+				49E8E2661FF7A2A3004E8DFA /* Statistics.swift */,
+				499C2E141FDDCE2B0009F1D9 /* Main.storyboard */,
+				499C2E191FDDCE2B0009F1D9 /* LaunchScreen.storyboard */,
+				499C2E1C1FDDCE2B0009F1D9 /* Info.plist */,
+				49574BED1FF38BC9003CA126 /* GoogleService-Info.plist */,
+			);
+			path = Disturb;
+			sourceTree = "<group>";
+		};
+		499C2E241FDDCE2B0009F1D9 /* DisturbTests */ = {
+			isa = PBXGroup;
+			children = (
+				499C2E251FDDCE2B0009F1D9 /* DisturbTests.swift */,
+				499C2E271FDDCE2B0009F1D9 /* Info.plist */,
+			);
+			path = DisturbTests;
+			sourceTree = "<group>";
+		};
+		499C2E2F1FDDCE2B0009F1D9 /* DisturbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				499C2E301FDDCE2B0009F1D9 /* DisturbUITests.swift */,
+				499C2E321FDDCE2B0009F1D9 /* Info.plist */,
+			);
+			path = DisturbUITests;
+			sourceTree = "<group>";
+		};
+		499C2E391FDDCE2B0009F1D9 /* Disturb WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				499C2E3A1FDDCE2B0009F1D9 /* Interface.storyboard */,
+				499C2E3D1FDDCE2B0009F1D9 /* Assets.xcassets */,
+				499C2E3F1FDDCE2B0009F1D9 /* Info.plist */,
+			);
+			path = "Disturb WatchKit App";
+			sourceTree = "<group>";
+		};
+		499C2E481FDDCE2B0009F1D9 /* Disturb WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				499C2E491FDDCE2B0009F1D9 /* InterfaceController.swift */,
+				499C2E4B1FDDCE2B0009F1D9 /* ExtensionDelegate.swift */,
+				499C2E4D1FDDCE2B0009F1D9 /* NotificationController.swift */,
+				499C2E4F1FDDCE2B0009F1D9 /* Assets.xcassets */,
+				499C2E511FDDCE2B0009F1D9 /* Info.plist */,
+				499C2E521FDDCE2B0009F1D9 /* PushNotificationPayload.apns */,
+			);
+			path = "Disturb WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CE717E47E99EF9FF2E3C2FBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C7DF62EBFAC219A4B41E6A /* Pods-Disturb.debug.xcconfig */,
+				268299668A7E4150F6E31BAF /* Pods-Disturb.release.xcconfig */,
+				7E99853CA64C9A9A856D72E4 /* Pods-Disturb WatchKit App.debug.xcconfig */,
+				87F76EA6D7B914544E6C9383 /* Pods-Disturb WatchKit App.release.xcconfig */,
+				715F599B0624EFF73134DF65 /* Pods-Disturb WatchKit Extension.debug.xcconfig */,
+				4EFC1F3CD577A22E6D2FEBEC /* Pods-Disturb WatchKit Extension.release.xcconfig */,
+				2AD0075B6D9CA07BF6328CCE /* Pods-DisturbTests.debug.xcconfig */,
+				9C179F39D43FA1F6EC5592E4 /* Pods-DisturbTests.release.xcconfig */,
+				2D20CE0E8D58B65CCB8E34E0 /* Pods-DisturbUITests.debug.xcconfig */,
+				B085740A189DBD76DEE1CC8F /* Pods-DisturbUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		499C2E0C1FDDCE2B0009F1D9 /* Disturb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499C2E5D1FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb" */;
+			buildPhases = (
+				1B323FE17F21ECF89974F339 /* [CP] Check Pods Manifest.lock */,
+				499C2E091FDDCE2B0009F1D9 /* Sources */,
+				499C2E0A1FDDCE2B0009F1D9 /* Frameworks */,
+				499C2E0B1FDDCE2B0009F1D9 /* Resources */,
+				499C2E5C1FDDCE2B0009F1D9 /* Embed Watch Content */,
+				A8C0387967B2B90FB4E38E48 /* [CP] Embed Pods Frameworks */,
+				F45F759CDC1DEE8F8F73A086 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499C2E381FDDCE2B0009F1D9 /* PBXTargetDependency */,
+			);
+			name = Disturb;
+			productName = Disturb;
+			productReference = 499C2E0D1FDDCE2B0009F1D9 /* Disturb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		499C2E201FDDCE2B0009F1D9 /* DisturbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499C2E601FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "DisturbTests" */;
+			buildPhases = (
+				4E1798DB35B26D08E5241D57 /* [CP] Check Pods Manifest.lock */,
+				499C2E1D1FDDCE2B0009F1D9 /* Sources */,
+				499C2E1E1FDDCE2B0009F1D9 /* Frameworks */,
+				499C2E1F1FDDCE2B0009F1D9 /* Resources */,
+				F2A1CAB2E40D9EA38A7FAE19 /* [CP] Embed Pods Frameworks */,
+				9592445E059B4E22AE5D05D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499C2E231FDDCE2B0009F1D9 /* PBXTargetDependency */,
+			);
+			name = DisturbTests;
+			productName = DisturbTests;
+			productReference = 499C2E211FDDCE2B0009F1D9 /* DisturbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		499C2E2B1FDDCE2B0009F1D9 /* DisturbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499C2E631FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "DisturbUITests" */;
+			buildPhases = (
+				3CEB0D3F9044ACECB725C584 /* [CP] Check Pods Manifest.lock */,
+				499C2E281FDDCE2B0009F1D9 /* Sources */,
+				499C2E291FDDCE2B0009F1D9 /* Frameworks */,
+				499C2E2A1FDDCE2B0009F1D9 /* Resources */,
+				02B3F593936A49E202D094D0 /* [CP] Embed Pods Frameworks */,
+				49445A157B2F97E3F7B00B01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499C2E2E1FDDCE2B0009F1D9 /* PBXTargetDependency */,
+			);
+			name = DisturbUITests;
+			productName = DisturbUITests;
+			productReference = 499C2E2C1FDDCE2B0009F1D9 /* DisturbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		499C2E341FDDCE2B0009F1D9 /* Disturb WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499C2E591FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb WatchKit App" */;
+			buildPhases = (
+				AB1BE36991EE56C7DBE019A9 /* [CP] Check Pods Manifest.lock */,
+				499C2E331FDDCE2B0009F1D9 /* Resources */,
+				499C2E581FDDCE2B0009F1D9 /* Embed App Extensions */,
+				7C389B09192A355DC6A4DEBB /* Frameworks */,
+				9FD4AF2E24CAA38086E83D40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499C2E471FDDCE2B0009F1D9 /* PBXTargetDependency */,
+			);
+			name = "Disturb WatchKit App";
+			productName = "Disturb WatchKit App";
+			productReference = 499C2E351FDDCE2B0009F1D9 /* Disturb WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		499C2E431FDDCE2B0009F1D9 /* Disturb WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499C2E551FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb WatchKit Extension" */;
+			buildPhases = (
+				E64EFA70D1B1CAAE0B2D42EF /* [CP] Check Pods Manifest.lock */,
+				499C2E401FDDCE2B0009F1D9 /* Sources */,
+				499C2E411FDDCE2B0009F1D9 /* Frameworks */,
+				499C2E421FDDCE2B0009F1D9 /* Resources */,
+				80BF2C55D5D422F18C423D0F /* [CP] Embed Pods Frameworks */,
+				9A58C769A9E24726D765A352 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disturb WatchKit Extension";
+			productName = "Disturb WatchKit Extension";
+			productReference = 499C2E441FDDCE2B0009F1D9 /* Disturb WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		499C2E051FDDCE2B0009F1D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Scott Andrews";
+				TargetAttributes = {
+					499C2E0C1FDDCE2B0009F1D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					499C2E201FDDCE2B0009F1D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 499C2E0C1FDDCE2B0009F1D9;
+					};
+					499C2E2B1FDDCE2B0009F1D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 499C2E0C1FDDCE2B0009F1D9;
+					};
+					499C2E341FDDCE2B0009F1D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+					499C2E431FDDCE2B0009F1D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 499C2E081FDDCE2B0009F1D9 /* Build configuration list for PBXProject "Disturb" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 499C2E041FDDCE2B0009F1D9;
+			productRefGroup = 499C2E0E1FDDCE2B0009F1D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				499C2E0C1FDDCE2B0009F1D9 /* Disturb */,
+				499C2E201FDDCE2B0009F1D9 /* DisturbTests */,
+				499C2E2B1FDDCE2B0009F1D9 /* DisturbUITests */,
+				499C2E341FDDCE2B0009F1D9 /* Disturb WatchKit App */,
+				499C2E431FDDCE2B0009F1D9 /* Disturb WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499C2E0B1FDDCE2B0009F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E1B1FDDCE2B0009F1D9 /* LaunchScreen.storyboard in Resources */,
+				49574BEE1FF38BC9003CA126 /* GoogleService-Info.plist in Resources */,
+				4926448E1FE1EC9F00606BD3 /* Assets.xcassets in Resources */,
+				499C2E161FDDCE2B0009F1D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E1F1FDDCE2B0009F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E2A1FDDCE2B0009F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E331FDDCE2B0009F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E3E1FDDCE2B0009F1D9 /* Assets.xcassets in Resources */,
+				499C2E3C1FDDCE2B0009F1D9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E421FDDCE2B0009F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E501FDDCE2B0009F1D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B3F593936A49E202D094D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisturbUITests/Pods-DisturbUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B323FE17F21ECF89974F339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disturb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CEB0D3F9044ACECB725C584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisturbUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49445A157B2F97E3F7B00B01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisturbUITests/Pods-DisturbUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1798DB35B26D08E5241D57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisturbTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80BF2C55D5D422F18C423D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Disturb WatchKit Extension/Pods-Disturb WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9592445E059B4E22AE5D05D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisturbTests/Pods-DisturbTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A58C769A9E24726D765A352 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Disturb WatchKit Extension/Pods-Disturb WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD4AF2E24CAA38086E83D40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Disturb WatchKit App/Pods-Disturb WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C0387967B2B90FB4E38E48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Disturb/Pods-Disturb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Onboard/Onboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Onboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Disturb/Pods-Disturb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1BE36991EE56C7DBE019A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disturb WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E64EFA70D1B1CAAE0B2D42EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disturb WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A1CAB2E40D9EA38A7FAE19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisturbTests/Pods-DisturbTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45F759CDC1DEE8F8F73A086 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Disturb/Pods-Disturb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499C2E091FDDCE2B0009F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E8E2671FF7A2A3004E8DFA /* Statistics.swift in Sources */,
+				499C2E131FDDCE2B0009F1D9 /* ViewController.swift in Sources */,
+				49BFC5A71FE6B9DC004C5C82 /* SignedIn.swift in Sources */,
+				494432DA1FE17E3F00B8641E /* Home.swift in Sources */,
+				49B42C2E1FEE63C500F4BF0E /* Shop.swift in Sources */,
+				499C2E111FDDCE2B0009F1D9 /* AppDelegate.swift in Sources */,
+				49548CC11FE2954500BFC552 /* SignIn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E1D1FDDCE2B0009F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E261FDDCE2B0009F1D9 /* DisturbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E281FDDCE2B0009F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E311FDDCE2B0009F1D9 /* DisturbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499C2E401FDDCE2B0009F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C2E4E1FDDCE2B0009F1D9 /* NotificationController.swift in Sources */,
+				499C2E4C1FDDCE2B0009F1D9 /* ExtensionDelegate.swift in Sources */,
+				499C2E4A1FDDCE2B0009F1D9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		499C2E231FDDCE2B0009F1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499C2E0C1FDDCE2B0009F1D9 /* Disturb */;
+			targetProxy = 499C2E221FDDCE2B0009F1D9 /* PBXContainerItemProxy */;
+		};
+		499C2E2E1FDDCE2B0009F1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499C2E0C1FDDCE2B0009F1D9 /* Disturb */;
+			targetProxy = 499C2E2D1FDDCE2B0009F1D9 /* PBXContainerItemProxy */;
+		};
+		499C2E381FDDCE2B0009F1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499C2E341FDDCE2B0009F1D9 /* Disturb WatchKit App */;
+			targetProxy = 499C2E371FDDCE2B0009F1D9 /* PBXContainerItemProxy */;
+		};
+		499C2E471FDDCE2B0009F1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499C2E431FDDCE2B0009F1D9 /* Disturb WatchKit Extension */;
+			targetProxy = 499C2E461FDDCE2B0009F1D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		499C2E141FDDCE2B0009F1D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C2E151FDDCE2B0009F1D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		499C2E191FDDCE2B0009F1D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C2E1A1FDDCE2B0009F1D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		499C2E3A1FDDCE2B0009F1D9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C2E3B1FDDCE2B0009F1D9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		499C2E531FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		499C2E541FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		499C2E561FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715F599B0624EFF73134DF65 /* Pods-Disturb WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				INFOPLIST_FILE = "Disturb WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		499C2E571FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFC1F3CD577A22E6D2FEBEC /* Pods-Disturb WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				INFOPLIST_FILE = "Disturb WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		499C2E5A1FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E99853CA64C9A9A856D72E4 /* Pods-Disturb WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				IBSC_MODULE = Disturb_WatchKit_Extension;
+				INFOPLIST_FILE = "Disturb WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		499C2E5B1FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F76EA6D7B914544E6C9383 /* Pods-Disturb WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				IBSC_MODULE = Disturb_WatchKit_Extension;
+				INFOPLIST_FILE = "Disturb WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		499C2E5E1FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C7DF62EBFAC219A4B41E6A /* Pods-Disturb.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Disturb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		499C2E5F1FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268299668A7E4150F6E31BAF /* Pods-Disturb.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7LW5526J74;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Disturb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mob.app.dev.disturb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a584fc64-da95-4788-b97e-13236552277c";
+				PROVISIONING_PROFILE_SPECIFIER = "Mobile Application Development Course Profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		499C2E611FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD0075B6D9CA07BF6328CCE /* Pods-DisturbTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BJQ6A33MN;
+				INFOPLIST_FILE = DisturbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Andrews-Apps.DisturbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disturb.app/Disturb";
+			};
+			name = Debug;
+		};
+		499C2E621FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C179F39D43FA1F6EC5592E4 /* Pods-DisturbTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BJQ6A33MN;
+				INFOPLIST_FILE = DisturbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Andrews-Apps.DisturbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disturb.app/Disturb";
+			};
+			name = Release;
+		};
+		499C2E641FDDCE2B0009F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D20CE0E8D58B65CCB8E34E0 /* Pods-DisturbUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BJQ6A33MN;
+				INFOPLIST_FILE = DisturbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Andrews-Apps.DisturbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Disturb;
+			};
+			name = Debug;
+		};
+		499C2E651FDDCE2B0009F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B085740A189DBD76DEE1CC8F /* Pods-DisturbUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BJQ6A33MN;
+				INFOPLIST_FILE = DisturbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Scott-Andrews-Apps.DisturbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Disturb;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499C2E081FDDCE2B0009F1D9 /* Build configuration list for PBXProject "Disturb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E531FDDCE2B0009F1D9 /* Debug */,
+				499C2E541FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499C2E551FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E561FDDCE2B0009F1D9 /* Debug */,
+				499C2E571FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499C2E591FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E5A1FDDCE2B0009F1D9 /* Debug */,
+				499C2E5B1FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499C2E5D1FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "Disturb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E5E1FDDCE2B0009F1D9 /* Debug */,
+				499C2E5F1FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499C2E601FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "DisturbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E611FDDCE2B0009F1D9 /* Debug */,
+				499C2E621FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499C2E631FDDCE2B0009F1D9 /* Build configuration list for PBXNativeTarget "DisturbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499C2E641FDDCE2B0009F1D9 /* Debug */,
+				499C2E651FDDCE2B0009F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 499C2E051FDDCE2B0009F1D9 /* Project object */;
+}
